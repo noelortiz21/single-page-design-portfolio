@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.even-columns{
+    display: grid;
+    gap: var(--grid-gap, $grid-gap);
+
+    // this was dropped for the generic template version
+    //was used in the chef's services project
+    // & > * {
+    //     max-width: 500px;
+    //     margin-inline:auto;
+    // }
+
+    @include mq(medium){
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
