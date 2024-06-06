@@ -25,14 +25,15 @@
         <h1 class="clr-primary-900 fs-900 fw-bold">Design solutions made easy</h1>
         <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
       </section>
-      <section class="grid container">
+      <section class="container">
+      <div class="grid ">
         <div class="card bg-neutral-900">
           <img class="card__img margin-block-end-94" data-card-img="medium" src="assets/pattern-graphic-design.svg" alt="">
           <h2 class="fs-24">Graphic Design</h2>
         </div>
 
         <div class="grid__inner">
-          <div class="card bg-neutral-300">
+          <div class="card bg-neutral-300" data-card-height="small">
             <img class="card__img margin-block-end-40" data-card-img="small" src="assets/pattern-ui-ux.svg" alt="">
             <h2>UI/UX</h2>
           </div>
@@ -40,19 +41,21 @@
             <img class="card__img margin-block-end-40" data-card-img="small" src="assets/pattern-apps.svg" alt="">
             <h2>Apps</h2>
           </div>
+          <div class="card bg-neutral-400 last-child">
+            <img class="card__img margin-block-end-16" data-card-img="medium" src="assets/pattern-illustrations.svg" alt="">
+            <h2>Illustrations</h2>
+          </div>
         </div>
 
-        <div class="card bg-neutral-400">
-          <img class="card__img margin-block-end-16" data-card-img="medium" src="assets/pattern-illustrations.svg" alt="">
-          <h2>Illustrations</h2>
-        </div>
-        <div class="card bg-neutral-800">
-          <img class="card__img margin-block-end-40" data-card-img="large" src="assets/pattern-photography.svg" alt="">
-          <h2>Photography</h2>
-        </div>
-        <div class="card bg-primary-800">
-          <img class="card__img margin-block-end-40" data-card-img="medium" src="assets/pattern-motion-graphics.svg" alt="">
-          <h2>Motion Graphics</h2>
+        <div class="flex">
+          <div class="card bg-neutral-800">
+            <img class="card__img margin-block-end-40" data-card-img="large" src="assets/pattern-photography.svg" alt="">
+            <h2>Photography</h2>
+          </div>
+          <div class="card bg-primary-800">
+            <img class="card__img margin-block-end-40" data-card-img="medium" src="assets/pattern-motion-graphics.svg" alt="">
+            <h2>Motion Graphics</h2>
+          </div>
         </div>
       </section>
       <section class="container padding-block-100">
@@ -65,7 +68,17 @@
           <button class="button" data-type="accent">Free Consultation</button>
         </div>
       </section>
-        <section class="container border-radius-3 margin-block-start-100 bg-primary-900">
+      <section>
+        <h2 class="fs-600 margin-block-end-32 fw-bold text-center clr-primary-900">My Work</h2>
+        <div class="slideshow">
+          <div class="slide"><img class="slide-1" src="assets/image-slide-1.jpg" alt=""></div>
+          <div class="slide"><img class="slide-2" src="assets/image-slide-2.jpg" alt=""></div>
+          <div class="slide"><img class="slide-3" src="assets/image-slide-3.jpg" alt=""></div>
+          <div class="slide"><img class="slide-4" src="assets/image-slide-4.jpg" alt=""></div>
+          <div class="slide"><img class="slide-5" src="assets/image-slide-5.jpg" alt=""></div>
+        </div>
+      </section>
+      <section class="container border-radius-3 margin-block-start-100 bg-primary-900">
           <div class="info-card text-center padding-block-48  padding-inline-24 flow" data-accent-info-card="dark">
             <h3 class="fs-800 fw-bold">Book a call with me</h3>
             <p> I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
@@ -73,11 +86,13 @@
           </div>
         </section>
       </main>
-    <footer>
-          <div class="container">
-            <img class="logo" src="assets/logo.svg" alt="">
-            <button class="button 200">Free Consultation</button>
-          </div>
+    <footer class="bg-primary-100">
+          <section class="container ">
+            <div class="flex-group padding-block-40">
+              <img class="logo" src="assets/logo.svg" alt="">
+              <button class="button 200">Free Consultation</button>
+            </div>
+          </section>
     </footer>
   </body>
 </html>

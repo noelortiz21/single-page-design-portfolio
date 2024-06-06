@@ -5,8 +5,12 @@
     flex-wrap: wrap;
     // column-gap: var(--flex-column-gap, $flex-group-gap);
     // row-gap: var(--flex-row-gap, calc($flex-group-gap / 2));
-    justify-content: space-between;
+    // justify-content: space-between;
     min-width: 343px;
+
+    & .logo{
+        margin-right: auto;
+    }
 }
 
 // .flex-group.mx-auto{
