@@ -1,0 +1,32 @@
+.border-radius{
+    &-0{
+        border-radius: 0;
+    }
+    &-1{
+        border-radius: 0.125rem;
+    }
+    &-2{
+        border-radius: 0.25rem;
+    }
+    &-3{
+        border-radius: 0.5rem;
+    }
+    &-4{
+        border-radius: 1rem;
+    }
+    &-5{
+        border-radius: 2rem;
+    }
+    &-6{
+        border-radius: 4rem;
+    }
+    &-7{
+        border-radius: 8rem;
+    }
+    &-8{
+        border-radius: 16rem;
+    }
+    &-9{
+        border-radius: 9999px;
+    }
+}

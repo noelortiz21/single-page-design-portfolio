@@ -19,8 +19,8 @@
     color: clr(primary,100);
 
     &[data-type='accent']{
-        background-color: clr(primary,400);
-        color: clr(neutral,900);
+        background-color: clr(neutral,400);
+        color: clr(primary,100);
     }
 
     &[data-type='outline']{

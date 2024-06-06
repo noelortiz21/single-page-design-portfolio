@@ -1,6 +1,23 @@
 @use '../abstracts' as *;
 .card {
     display: grid;
-    gap: 1rem;
+    grid-template-rows: 1fr auto;
     padding: $card-body-padding;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: $fw-700;
+    color: rgb(255, 255, 255);
+
+    &__img{
+        margin-left: auto;
+    }
+}
+
+.info-card{
+    
+    &[data-accent-info-card="dark"]{
+        border-radius: 8px;
+        color: clr(primary,100);
+        font-size: fs(300);
+    }
 }
