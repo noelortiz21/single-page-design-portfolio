@@ -1,16 +1,22 @@
 @use '../abstracts/' as *;
 
 .button{
-    display:inline-flex;
+    display:inline-block;
     cursor: pointer;
     text-decoration: none;
     // text-transform: uppercase;
     line-height: 1;
     border: 0;
-    font-weight: $fw-700;
-    padding: 14px 45px;
-    transition: 275ms ease;
+    // font-weight: $fw-700;
+    width: 176px;
+    // height: 44px;
+    //this is for bigger than mobile padding
+    padding: 16px 27px;
     background-color: clr(primary,900);
+    border-radius: 100vw;
+    font-size: fs(200);
+    font-weight: $fw-700;
+    color: clr(primary,100);
 
     &[data-type='accent']{
         background-color: clr(primary,400);
