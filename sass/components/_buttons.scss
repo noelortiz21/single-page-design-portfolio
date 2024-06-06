@@ -4,12 +4,13 @@
     display:inline-flex;
     cursor: pointer;
     text-decoration: none;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     line-height: 1;
     border: 0;
     font-weight: $fw-700;
-    padding: 1.125em 2em;
+    padding: 14px 45px;
     transition: 275ms ease;
+    background-color: clr(primary,900);
 
     &[data-type='accent']{
         background-color: clr(primary,400);

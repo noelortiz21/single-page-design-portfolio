@@ -1,4 +1,4 @@
 //note to change the flow spacer you would add an inline style to the html node
 .flow > *:where(:not(:first-child)) {
-    margin-top: var(--flow-spacer, 1rem);
+    margin-top: var(--flow-spacer, 1.5rem);
   }
