@@ -21,50 +21,58 @@
       </div>
     </header>
     <main class="bg-primary-100">
+
       <section class="container padding-block-32 flow text-center">
-        <h1 class="clr-primary-900 fs-900 fw-bold">Design solutions made easy</h1>
-        <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+        <div class="responsive-padding flow">
+          <h1 class="clr-primary-900 fs-900 fw-bold">Design solutions made easy</h1>
+          <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+        </div>
       </section>
-      <section class="container">
-      <div class="grid ">
-        <div class="card bg-neutral-900">
-          <img class="card__img margin-block-end-94" data-card-img="medium" src="assets/pattern-graphic-design.svg" alt="">
-          <h2 class="fs-24">Graphic Design</h2>
-        </div>
 
-        <div class="grid__inner">
-          <div class="card bg-neutral-300" data-card-height="small">
-            <img class="card__img margin-block-end-40" data-card-img="small" src="assets/pattern-ui-ux.svg" alt="">
-            <h2>UI/UX</h2>
+      <section class= "container">
+        
+        <div class="grid">
+          <div class="card grid__card-1 bg-neutral-900">
+            <img class="card__img margin-block-end-94" data-card-img="medium" src="assets/pattern-graphic-design.svg" alt="">
+            <h2 class="fs-24">Graphic Design</h2>
           </div>
-          <div class="card bg-neutral-100">
-            <img class="card__img margin-block-end-40" data-card-img="small" src="assets/pattern-apps.svg" alt="">
-            <h2>Apps</h2>
-          </div>
-          <div class="card bg-neutral-400 last-child">
-            <img class="card__img margin-block-end-16" data-card-img="medium" src="assets/pattern-illustrations.svg" alt="">
-            <h2>Illustrations</h2>
-          </div>
-        </div>
 
-        <div class="flex">
-          <div class="card bg-neutral-800">
+          <!-- <div class="grid__inner margin-block-end-24"> -->
+            <div class="card grid__card-2 bg-neutral-300" data-card-height="small">
+              <img class="card__img margin-block-end-40" data-card-img="small" src="assets/pattern-ui-ux.svg" alt="">
+              <h2>UI/UX</h2>
+            </div>
+            <div class="card  grid__card-3 bg-neutral-100">
+              <img class="card__img margin-block-end-40" data-card-img="small" src="assets/pattern-apps.svg" alt="">
+              <h2>Apps</h2>
+            </div>
+            <div class="card grid__card-4 bg-neutral-400 ">
+              <img class="card__img margin-block-end-16" data-card-img="medium" src="assets/pattern-illustrations.svg" alt="">
+              <h2>Illustrations</h2>
+            </div>
+          <!-- </div> -->
+        <!-- </div> -->
+
+        <!-- <div class="flex-3"> -->
+          <div class="card grid__card-5 bg-neutral-800">
             <img class="card__img margin-block-end-40" data-card-img="large" src="assets/pattern-photography.svg" alt="">
             <h2>Photography</h2>
           </div>
-          <div class="card bg-primary-800">
+
+          <div class="card grid__card-6 bg-primary-800">
             <img class="card__img margin-block-end-40" data-card-img="medium" src="assets/pattern-motion-graphics.svg" alt="">
             <h2>Motion Graphics</h2>
           </div>
-        </div>
+          <!-- </div> -->
+          </div>
       </section>
-      <section class="container padding-block-100">
-        <div class="margin-block-end-40">
-          <img src="assets/image-amy.webp" alt="">
+      <section class="container padding-block-100 about-me">
+        <div class="about-me__img-wrapper margin-block-end-40 mx-auto">
+          <img class="about-me__img" src="assets/image-amy.webp" alt="">
         </div>
-        <div class="text-center flow">
+        <div class="about-me__description text-center flow">
           <h3 class="fs-800 clr-primary-900 fw-bold">I'm Amy, and I'd love to work on your next project</h3>
-          <p> I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+          <p > I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
           <button class="button" data-type="accent">Free Consultation</button>
         </div>
       </section>
@@ -78,11 +86,11 @@
           <div class="slide"><img class="slide-5" src="assets/image-slide-5.jpg" alt=""></div>
         </div>
       </section>
-      <section class="container border-radius-3 margin-block-start-100 bg-primary-900">
+      <section class="book-me container border-radius-3 margin-block-start-100 bg-primary-900">
           <div class="info-card text-center padding-block-48  padding-inline-24 flow" data-accent-info-card="dark">
-            <h3 class="fs-800 fw-bold">Book a call with me</h3>
-            <p> I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
-            <button class="button" data-type="accent">Free Consultation</button>
+            <h3 info-card__title class="fs-800 fw-bold">Book a call with me</h3>
+            <p class="info-card__paragraph"> I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+            <button class="button info-card__button" data-type="accent">Free Consultation</button>
           </div>
         </section>
       </main>

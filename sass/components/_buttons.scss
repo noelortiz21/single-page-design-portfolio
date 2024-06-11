@@ -18,10 +18,21 @@
     font-weight: $fw-700;
     color: clr(primary,100);
 
+    &:is(:hover, :focus){
+        background-color: clr(neutral,900);
+    }
+    
     &[data-type='accent']{
         background-color: clr(neutral,400);
         color: clr(primary,100);
+
+        &:is(:hover, :focus){
+            background-color: clr(neutral,300);
+            color: clr(primary,100);
+        }
     }
+
+
 
     &[data-type='outline']{
         --outline-size: 5px;
@@ -30,11 +41,8 @@
         outline: var(--outline-size) solid clr(neutral,100);
         outline-offset: calc(var(--outline-size) * -1);
         color: clr(neutral,100);
+
     }
 
-    &:is(:hover, :focus){
-        background: clr(neutral,100);
-        color: clr(neutral,900);
-    }
 
 }

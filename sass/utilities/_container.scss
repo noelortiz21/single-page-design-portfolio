@@ -6,6 +6,15 @@
 
     width: min(100% - var(--padding), var(--max-width));
     margin-inline: auto;
+
+    @include mq(medium){
+        --padding:80px;
+        --max-width: 850px;
+    }
+    @include mq(large){
+        --padding:165px;
+        --max-width: 1110px;
+    }
 }
 
 .container[data-type='wide']{

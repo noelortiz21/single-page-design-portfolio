@@ -11,10 +11,14 @@
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(333px,1fr));
-    // grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        'a a'
+        'b c'
+        'd d'
+        'e e'
+        'f f'
+        ;
     gap: 1.5rem;
-
 
 
     &__inner{
@@ -29,49 +33,179 @@
         }
     }
 
-    &__item{
-        width: 100%;
-        object-fit: cover;
+    &__card-1{
+        grid-area: a;
+    }
+    &__card-2{
+        grid-area: b;
+    }
+    &__card-3{
+        grid-area: c;
+    }
+    &__card-4{
+        grid-area: d;
+    }
+    &__card-5{
+        grid-area: e;
+    }
+    &__card-6{
+        grid-area: f;
+    }
 
-        &[data-card-img= 'small'] {
-            width: 64px;
-        }
-        &[data-card-img= 'medium']{
-            width: 128px;
-        }
-        &[data-card-img= 'large']{
-            width: 160px;
-        }
-
+    &[data-card-img= 'small'] {
+        width: 64px;
+    }
+    &[data-card-img= 'medium']{
+        width: 128px;
+    }
+    &[data-card-img= 'large']{
+        width: 160px;
     }
 
     @include mq(medium){
-        grid-template-rows: repeat(1, auto);        
-        grid-template-columns: repeat(3, 1fr);        
-        .flex:last-child {
+        &{
+            grid-template-areas: 
+                'a a b c'
+                'a a d d'
+                'a a d d'
+                'e e f f'
+                ;
         }
-
-        &:nth-child(3){
-            height: 100px;
+        &__card-1{
+            grid-area: a;
+        }
+        &__card-2{
+            grid-area: b;
+        }
+        &__card-3{
+            grid-area: c;
+        }
+        &__card-4{
+            grid-area: d;
+        }
+        &__card-5{
+            grid-area: e;
+        }
+        &__card-6{
+            grid-area: f;
+        }
+     }
+    @include mq(large){
+        &{
+            grid-template-areas: 
+                'a a b c d d'
+                'a a e e f f'
+                ;
+        }
+        &__card-1{
+            grid-area: a;
+        }
+        &__card-2{
+            grid-area: b;
+        }
+        &__card-3{
+            grid-area: c;
+        }
+        &__card-4{
+            grid-area: d;
+        }
+        &__card-5{
+            grid-area: e;
+        }
+        &__card-6{
+            grid-area: f;
         }
     }
 }
-.flex{
-    gap: 1.5rem;
+
+.responsive-padding{
+    padding-inline: clamp(25px, 6vw, 500px);
+    @include mq(large){
+        padding-inline: 178px;
+    }
+}
+.about-me{
+    max-width: 620px;
+    &__img-wrapper { 
+        width: max(300px,55%); 
+    }
+
+
+    @include mq(medium){
+        display: flex;
+        gap: 1.5rem;
+        max-width: none;
+        align-items: center;
+        &__img-wrapper{
+            margin:0;
+            flex: 1;
+            position: relative;
+            left: -70px;
+            // height: 364px;
+        }
+        &__img{
+            height: 364px;
+            width: 364px;
+            object-fit: cover;
+            overflow: visible;
+        }
+        &__description{
+            text-align: left;
+            flex: 1;
+        }
+  
+    }
+    @include mq(large){
+            max-width: none;
+            position: initial;
+            gap: 125px;
+        &__img-wrapper{
+            position: relative;
+            left: 0px;
+            // height: 445px;
+        } 
+        &__img{
+            height: 445px;
+            width: 445px;
+        }
+    }
+}
+.info-card {
+    @include mq(medium){
+        padding: 56px 75px 64px;
+    }
+
+    @include mq(large){
+        padding-block: 80px;
+        padding-inline-start: 65px;
+        padding-inline-end: 95px;
+        text-align: left;
+        display: grid;
+        grid-template-areas: 
+            'a c'
+            'b c'
+            ;
+        grid-template-columns: minmax(200px,1fr) 1fr;
+
+        &__title{
+            grid-area: a;
+        }
+        &__paragraph{
+            grid-area: b;
+        }
+        &__button{
+            grid-area: c;
+            align-self: center;
+            justify-self: right;
+            
+        }
+            
+    }
 }
 @keyframes scrollLeft {
     to {
         left: -270px;
     }
-    //when you have some time you can try to 
-    //make the animation using translateX
-    // from {
-    //     transform: translateX(90%);
-    // }
-    // to{
-    //     transform: translateX(-100%);
-    
-    // }
     
 }
 .slideshow{
